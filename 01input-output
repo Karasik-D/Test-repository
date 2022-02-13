@@ -1,5 +1,40 @@
-х = int(input(“Введите значение x”))
-y = int(input(“Введите значение y”))
-z = int(input(“Введите значение z”))
-rez=2*x**3-5*y**2+6*z-2*x*y+7*x*y*z
-print(rez)
+#задание 1
+x = int(input("Введите значение x "))
+y = int(input("Введите значение y "))
+z = int(input("Введите значение z "))
+exp = 2*x**3-5*y**2+6*z-2*x*y+7*x*y*z
+print(exp)
+#задание 2
+n = int(input())
+hours = n % (60 * 24) // 60
+minutes = n % 60
+print(hours, minutes)
+#задание 3
+n = int(input("Введите значение "))
+print('The next number for the number ' + str(n) + ' is ' + str(n + 1) + '.')
+print('The previous number for the number ' + str(n) + ' is ' + str(n - 1) + '.')
+# задание 4
+a = int(input("Количество учеников в первом классе "))
+b = int(input("Количество учеников во втором классе "))
+c = int(input("Количество учеников в третьем классе "))
+print(a // 2 + b // 2 + c // 2 + a % 2 + b % 2 + c % 2)
+# задание 5
+a = int(input("Введите расстояние между рядами "))
+b = int(input ("Введите расстояние между дырочками "))
+L = int(input ("Введите длину свободного конца шнурка "))
+N = int(input("Введите количество дырочек "))
+print(2 * L + (2 * N - 1) * a + 2 * (N - 1) * b)
+# домашняя работа 1
+ball = int(input("Сколько всего шаров необходимо "))
+pay = ball - 9
+print (pay)
+# домашняя работа 2
+part1 = int(input("Первый вклад "))
+part2 = int(input("Второй вклад "))
+part3 = int(input("Третий вклад "))
+total = 10000 - (part1 + part2 + part3)
+print (total)
+# домашняя работа 3
+name1 = input("Введите имя ")
+name2 = input("Введите отчество ")
+print('Здравствуйте, ' + name1 + name2 + '!')
